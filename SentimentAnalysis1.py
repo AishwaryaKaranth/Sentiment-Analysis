@@ -63,10 +63,10 @@ class TwitterClient(object):
     def __init__(self): 
         
         # keys and tokens from the Twitter Dev Console 
-        consumer_key = 'ujX5HGuWtDHPNLixlxtrrq2S8'
-        consumer_secret = 'hGwjoEyTKRd5mUxS5NAD74bq0tTXjf6NEuoMCYoURcbYgtGn0N'
-        access_token = '2838019735-fTp5rgIGgk50Nahsfr5iRCBr6eT4osE5IiMuimW'
-        access_token_secret = '80Gg1LydLprI0kd3qp6nP98Fn2cmTbrBZumbwEogoQ89P'
+        consumer_key = ''
+        consumer_secret = ''
+        access_token = ''
+        access_token_secret = ''#insert the credentials obtained from twitter dev account here.
   
         # attempt authentication 
         try: 
@@ -191,7 +191,7 @@ def main():
             negative_tweets.append(tweet)
 
     percentage_of_negative_tweets=(len(negative_tweets)/len(tweets))*100
-    print("negative tweets percentage:{} %",percentage_of_negative_tweets)'''
+    print("negative tweets percentage:{} %",percentage_of_negative_tweets)''' #does not work :/
     #show_wordcloud(b)
     import plotly.plotly as py
     import plotly.tools as tools
